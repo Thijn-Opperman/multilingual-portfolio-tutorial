@@ -2,10 +2,10 @@
 
 /* Tailwind v4 Theme Configuration */
 @theme {
-  /* Custom Colors */
-  --color-primary: #2563eb;
-  --color-secondary: #7c3aed;
-  --color-accent: #10b981;
+  /* Custom Colors - Modern Professional Palette */
+  --color-primary: #0f172a;
+  --color-secondary: #3b82f6;
+  --color-accent: #f59e0b;
 
   /* Custom Font Family */
   --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

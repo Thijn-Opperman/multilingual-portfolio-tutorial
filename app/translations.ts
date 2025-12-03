@@ -1,5 +1,5 @@
 // Define supported languages
-export type Language = "nl" | "en";
+export type Language = "nl" | "en" | "de" | "fr" | "es";
 
 // Type definition for all translations
 export type Translations = {
@@ -11,6 +11,7 @@ export type Translations = {
         home: string;
         about: string;
         skills: string;
+        projects: string;
         contact: string;
       };
       languageSelector: {
@@ -37,6 +38,7 @@ export type Translations = {
         home: string;
         about: string;
         skills: string;
+        projects: string;
         contact: string;
       };
       languageSelector: {
@@ -63,6 +65,7 @@ export type Translations = {
         home: string;
         about: string;
         skills: string;
+        projects: string;
         contact: string;
       };
       languageSelector: {
@@ -86,6 +89,40 @@ export type Translations = {
         };
       };
     };
+    projects: {
+      title: string;
+      description: string;
+      nav: {
+        home: string;
+        about: string;
+        skills: string;
+        projects: string;
+        contact: string;
+      };
+      languageSelector: {
+        label: string;
+      };
+      content: {
+        heading: string;
+        projects: {
+          project1: {
+            title: string;
+            description: string;
+            tech: string;
+          };
+          project2: {
+            title: string;
+            description: string;
+            tech: string;
+          };
+          project3: {
+            title: string;
+            description: string;
+            tech: string;
+          };
+        };
+      };
+    };
     contact: {
       title: string;
       description: string;
@@ -93,6 +130,7 @@ export type Translations = {
         home: string;
         about: string;
         skills: string;
+        projects: string;
         contact: string;
       };
       languageSelector: {
@@ -121,6 +159,7 @@ export const translations: Translations = {
         home: "Home",
         about: "Over Mij",
         skills: "Vaardigheden",
+        projects: "Projecten",
         contact: "Contact",
       },
       languageSelector: {
@@ -151,6 +190,7 @@ export const translations: Translations = {
         home: "Home",
         about: "Over Mij",
         skills: "Vaardigheden",
+        projects: "Projecten",
         contact: "Contact",
       },
       languageSelector: {
@@ -179,6 +219,7 @@ export const translations: Translations = {
         home: "Home",
         about: "Over Mij",
         skills: "Vaardigheden",
+        projects: "Projecten",
         contact: "Contact",
       },
       languageSelector: {
@@ -216,6 +257,7 @@ export const translations: Translations = {
         home: "Home",
         about: "Over Mij",
         skills: "Vaardigheden",
+        projects: "Projecten",
         contact: "Contact",
       },
       languageSelector: {
@@ -228,7 +270,41 @@ export const translations: Translations = {
         locationLabel: "Locatie",
         email: "info@fontys.nl",
         phone: "+31 6 12345678",
-        location: "Tilburg, Nederland",
+        location: "Amsterdam, Nederland",
+      },
+    },
+    projects: {
+      title: "Projecten - Mijn Portfolio",
+      description: "Bekijk mijn recente projecten en werk",
+      nav: {
+        home: "Home",
+        about: "Over Mij",
+        skills: "Vaardigheden",
+        projects: "Projecten",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Taal",
+      },
+      content: {
+        heading: "Mijn Projecten",
+        projects: {
+          project1: {
+            title: "E-commerce Platform",
+            description: "Volledig responsief e-commerce platform gebouwd met Next.js en Stripe integratie. Bevat product catalogus, winkelwagen, checkout proces en admin dashboard.",
+            tech: "Next.js, TypeScript, Tailwind CSS, Stripe, PostgreSQL",
+          },
+          project2: {
+            title: "Task Management App",
+            description: "Moderne task management applicatie met real-time updates, team collaboratie en project tracking. Gebouwd met React en Firebase voor real-time synchronisatie.",
+            tech: "React, Firebase, Material-UI, Redux",
+          },
+          project3: {
+            title: "Portfolio Website",
+            description: "Meertalige portfolio website met moderne UI/UX design. Volledig geoptimaliseerd voor SEO en performance met Next.js 16 en Tailwind CSS v4.",
+            tech: "Next.js, TypeScript, Tailwind CSS, i18n",
+          },
+        },
       },
     },
   },
@@ -240,6 +316,7 @@ export const translations: Translations = {
         home: "Home",
         about: "About",
         skills: "Skills",
+        projects: "Projects",
         contact: "Contact",
       },
       languageSelector: {
@@ -270,6 +347,7 @@ export const translations: Translations = {
         home: "Home",
         about: "About",
         skills: "Skills",
+        projects: "Projects",
         contact: "Contact",
       },
       languageSelector: {
@@ -298,6 +376,7 @@ export const translations: Translations = {
         home: "Home",
         about: "About",
         skills: "Skills",
+        projects: "Projects",
         contact: "Contact",
       },
       languageSelector: {
@@ -335,6 +414,7 @@ export const translations: Translations = {
         home: "Home",
         about: "About",
         skills: "Skills",
+        projects: "Projects",
         contact: "Contact",
       },
       languageSelector: {
@@ -347,7 +427,512 @@ export const translations: Translations = {
         locationLabel: "Location",
         email: "info@fontys.nl",
         phone: "+31 6 12345678",
-        location: "Eindhoven, Netherlands",
+        location: "Amsterdam, Netherlands",
+      },
+    },
+    projects: {
+      title: "Projects - My Portfolio",
+      description: "View my recent projects and work",
+      nav: {
+        home: "Home",
+        about: "About",
+        skills: "Skills",
+        projects: "Projects",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Language",
+      },
+      content: {
+        heading: "My Projects",
+        projects: {
+          project1: {
+            title: "E-commerce Platform",
+            description: "Fully responsive e-commerce platform built with Next.js and Stripe integration. Features product catalog, shopping cart, checkout process and admin dashboard.",
+            tech: "Next.js, TypeScript, Tailwind CSS, Stripe, PostgreSQL",
+          },
+          project2: {
+            title: "Task Management App",
+            description: "Modern task management application with real-time updates, team collaboration and project tracking. Built with React and Firebase for real-time synchronization.",
+            tech: "React, Firebase, Material-UI, Redux",
+          },
+          project3: {
+            title: "Portfolio Website",
+            description: "Multilingual portfolio website with modern UI/UX design. Fully optimized for SEO and performance with Next.js 16 and Tailwind CSS v4.",
+            tech: "Next.js, TypeScript, Tailwind CSS, i18n",
+          },
+        },
+      },
+    },
+  },
+  de: {
+    home: {
+      title: "Startseite - Mein Portfolio",
+      description: "Willkommen auf meiner Portfolio-Website",
+      nav: {
+        home: "Startseite",
+        about: "Über mich",
+        skills: "Fähigkeiten",
+        projects: "Projekte",
+        contact: "Kontakt",
+      },
+      languageSelector: {
+        label: "Sprache",
+      },
+      hero: {
+        greeting: "Hallo, ich bin Front-End-Entwickler",
+        subtitle:
+          "Ich erstelle moderne, responsive Websites mit Next.js und Tailwind CSS",
+        cta: "Meine Arbeit ansehen",
+      },
+      featureCards: {
+        card1title: "Modernes Design",
+        card1description:
+          "Schöne, responsive Benutzeroberflächen mit Tailwind CSS v4",
+        card2title: "Schnelle Leistung",
+        card2description:
+          "Optimiert mit Next.js 16 für blitzschnelle Seitenladezeiten",
+        card3title: "Mehrsprachig",
+        card3description:
+          "Vollständige Unterstützung für mehrere Sprachen mit einfachem Wechsel",
+      },
+    },
+    about: {
+      title: "Über mich - Mein Portfolio",
+      description: "Erfahren Sie mehr über mich und meinen Hintergrund",
+      nav: {
+        home: "Startseite",
+        about: "Über mich",
+        skills: "Fähigkeiten",
+        projects: "Projekte",
+        contact: "Kontakt",
+      },
+      languageSelector: {
+        label: "Sprache",
+      },
+      content: {
+        heading: "Über mich",
+        paragraph1:
+          "Ich bin ein leidenschaftlicher Front-End-Entwickler, der gerne moderne, benutzerfreundliche und visuell ansprechende Web-Erlebnisse erstellt. Mit einem Auge für Details und einem starken Fokus auf Benutzerfreundlichkeit übersetze ich komplexe Ideen in übersichtliche, responsive Benutzeroberflächen, die sich gut anfühlen.",
+        paragraph2:
+          "Aus Neugier erkunde ich ständig neue Technologien wie Next.js, React und Tailwind CSS, um schnelle, skalierbare und stilvolle Webanwendungen zu entwickeln. Ich glaube, dass gutes Design und solider Code Hand in Hand gehen, und das spiegelt sich in jedem Projekt wider, an dem ich arbeite.",
+      },
+      experience: {
+        years: "5+",
+        yearsLabel: "Jahre Erfahrung",
+        projects: "50+",
+        projectsLabel: "Abgeschlossene Projekte",
+        satisfaction: "100%",
+        satisfactionLabel: "Kundenzufriedenheit",
+      },
+    },
+    skills: {
+      title: "Fähigkeiten - Mein Portfolio",
+      description: "Meine technischen Fähigkeiten und Expertise",
+      nav: {
+        home: "Startseite",
+        about: "Über mich",
+        skills: "Fähigkeiten",
+        projects: "Projekte",
+        contact: "Kontakt",
+      },
+      languageSelector: {
+        label: "Sprache",
+      },
+      content: {
+        heading: "Meine Fähigkeiten",
+        categories: {
+          frontend: {
+            title: "Front-End-Entwicklung",
+            skills: [
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Tailwind CSS",
+              "HTML5",
+              "CSS3",
+            ],
+          },
+          backend: {
+            title: "Back-End-Entwicklung",
+            skills: ["Node.js", "Axios", "PostgreSQL", "MongoDB"],
+          },
+          tools: {
+            title: "Tools & Technologien",
+            skills: ["GitHub", "Cursor", "Figma", "Vercel"],
+          },
+        },
+      },
+    },
+    contact: {
+      title: "Kontakt - Mein Portfolio",
+      description: "Nehmen Sie Kontakt mit mir auf",
+      nav: {
+        home: "Startseite",
+        about: "Über mich",
+        skills: "Fähigkeiten",
+        projects: "Projekte",
+        contact: "Kontakt",
+      },
+      languageSelector: {
+        label: "Sprache",
+      },
+      content: {
+        heading: "Kontakt aufnehmen",
+        emailLabel: "E-Mail",
+        phoneLabel: "Telefon",
+        locationLabel: "Standort",
+        email: "info@fontys.nl",
+        phone: "+31 6 12345678",
+        location: "Berlin, Deutschland",
+      },
+    },
+    projects: {
+      title: "Projekte - Mein Portfolio",
+      description: "Sehen Sie meine neuesten Projekte und Arbeiten",
+      nav: {
+        home: "Startseite",
+        about: "Über mich",
+        skills: "Fähigkeiten",
+        projects: "Projekte",
+        contact: "Kontakt",
+      },
+      languageSelector: {
+        label: "Sprache",
+      },
+      content: {
+        heading: "Meine Projekte",
+        projects: {
+          project1: {
+            title: "E-Commerce-Plattform",
+            description: "Vollständig responsive E-Commerce-Plattform mit Next.js und Stripe-Integration. Enthält Produktkatalog, Warenkorb, Checkout-Prozess und Admin-Dashboard.",
+            tech: "Next.js, TypeScript, Tailwind CSS, Stripe, PostgreSQL",
+          },
+          project2: {
+            title: "Aufgabenverwaltungs-App",
+            description: "Moderne Aufgabenverwaltungsanwendung mit Echtzeit-Updates, Team-Kollaboration und Projektverfolgung. Erstellt mit React und Firebase für Echtzeit-Synchronisation.",
+            tech: "React, Firebase, Material-UI, Redux",
+          },
+          project3: {
+            title: "Portfolio-Website",
+            description: "Mehrsprachige Portfolio-Website mit modernem UI/UX-Design. Vollständig optimiert für SEO und Performance mit Next.js 16 und Tailwind CSS v4.",
+            tech: "Next.js, TypeScript, Tailwind CSS, i18n",
+          },
+        },
+      },
+    },
+  },
+  fr: {
+    home: {
+      title: "Accueil - Mon Portfolio",
+      description: "Bienvenue sur mon site portfolio",
+      nav: {
+        home: "Accueil",
+        about: "À propos",
+        skills: "Compétences",
+        projects: "Projets",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Langue",
+      },
+      hero: {
+        greeting: "Bonjour, je suis développeur Front-End",
+        subtitle:
+          "Je crée des sites web modernes et responsives avec Next.js et Tailwind CSS",
+        cta: "Voir mon travail",
+      },
+      featureCards: {
+        card1title: "Design Moderne",
+        card1description:
+          "De belles interfaces responsives construites avec Tailwind CSS v4",
+        card2title: "Performance Rapide",
+        card2description:
+          "Optimisé avec Next.js 16 pour des chargements de page ultra-rapides",
+        card3title: "Multilingue",
+        card3description:
+          "Support complet pour plusieurs langues avec changement facile",
+      },
+    },
+    about: {
+      title: "À propos - Mon Portfolio",
+      description: "En savoir plus sur moi et mon parcours",
+      nav: {
+        home: "Accueil",
+        about: "À propos",
+        skills: "Compétences",
+        projects: "Projets",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Langue",
+      },
+      content: {
+        heading: "À propos de moi",
+        paragraph1:
+          "Je suis un développeur front-end passionné qui aime créer des expériences web propres, modernes et intuitives. Avec un fort accent sur les détails et la convivialité, j'aime transformer des idées complexes en interfaces élégantes et responsives qui semblent sans effort à utiliser.",
+        paragraph2:
+          "Poussé par la curiosité, j'explore toujours de nouvelles technologies comme Next.js, React et Tailwind CSS pour créer des applications web rapides, évolutives et visuellement attrayantes. Je crois que le bon design et le code solide vont de pair, et je vise à apporter cet équilibre à chaque projet sur lequel je travaille.",
+      },
+      experience: {
+        years: "5+",
+        yearsLabel: "Années d'expérience",
+        projects: "50+",
+        projectsLabel: "Projets terminés",
+        satisfaction: "100%",
+        satisfactionLabel: "Satisfaction client",
+      },
+    },
+    skills: {
+      title: "Compétences - Mon Portfolio",
+      description: "Mes compétences techniques et mon expertise",
+      nav: {
+        home: "Accueil",
+        about: "À propos",
+        skills: "Compétences",
+        projects: "Projets",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Langue",
+      },
+      content: {
+        heading: "Mes compétences",
+        categories: {
+          frontend: {
+            title: "Développement Front-End",
+            skills: [
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Tailwind CSS",
+              "HTML5",
+              "CSS3",
+            ],
+          },
+          backend: {
+            title: "Développement Back-End",
+            skills: ["Node.js", "Axios", "PostgreSQL", "MongoDB"],
+          },
+          tools: {
+            title: "Outils & Technologies",
+            skills: ["GitHub", "Cursor", "Figma", "Vercel"],
+          },
+        },
+      },
+    },
+    contact: {
+      title: "Contact - Mon Portfolio",
+      description: "Entrer en contact avec moi",
+      nav: {
+        home: "Accueil",
+        about: "À propos",
+        skills: "Compétences",
+        projects: "Projets",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Langue",
+      },
+      content: {
+        heading: "Entrer en contact",
+        emailLabel: "E-mail",
+        phoneLabel: "Téléphone",
+        locationLabel: "Localisation",
+        email: "info@fontys.nl",
+        phone: "+31 6 12345678",
+        location: "Paris, France",
+      },
+    },
+    projects: {
+      title: "Projets - Mon Portfolio",
+      description: "Voir mes projets récents et mon travail",
+      nav: {
+        home: "Accueil",
+        about: "À propos",
+        skills: "Compétences",
+        projects: "Projets",
+        contact: "Contact",
+      },
+      languageSelector: {
+        label: "Langue",
+      },
+      content: {
+        heading: "Mes Projets",
+        projects: {
+          project1: {
+            title: "Plateforme E-commerce",
+            description: "Plateforme e-commerce entièrement responsive construite avec Next.js et intégration Stripe. Comprend catalogue de produits, panier, processus de paiement et tableau de bord administrateur.",
+            tech: "Next.js, TypeScript, Tailwind CSS, Stripe, PostgreSQL",
+          },
+          project2: {
+            title: "Application de Gestion de Tâches",
+            description: "Application moderne de gestion de tâches avec mises à jour en temps réel, collaboration d'équipe et suivi de projet. Construite avec React et Firebase pour la synchronisation en temps réel.",
+            tech: "React, Firebase, Material-UI, Redux",
+          },
+          project3: {
+            title: "Site Portfolio",
+            description: "Site portfolio multilingue avec un design UI/UX moderne. Entièrement optimisé pour le SEO et les performances avec Next.js 16 et Tailwind CSS v4.",
+            tech: "Next.js, TypeScript, Tailwind CSS, i18n",
+          },
+        },
+      },
+    },
+  },
+  es: {
+    home: {
+      title: "Inicio - Mi Portfolio",
+      description: "Bienvenido a mi sitio web de portfolio",
+      nav: {
+        home: "Inicio",
+        about: "Sobre Mí",
+        skills: "Habilidades",
+        projects: "Proyectos",
+        contact: "Contacto",
+      },
+      languageSelector: {
+        label: "Idioma",
+      },
+      hero: {
+        greeting: "Hola, soy Desarrollador Front-End",
+        subtitle:
+          "Diseño y desarrollo sitios web rápidos, modernos y responsivos que se ven geniales en cualquier dispositivo. Con un enfoque en código limpio y experiencias de usuario fluidas, construyo aplicaciones web usando Next.js, React y Tailwind CSS que combinan rendimiento y estilo.",
+        cta: "Explorar Mis Habilidades",
+      },
+      featureCards: {
+        card1title: "Diseño Moderno",
+        card1description:
+          "Interfaces hermosas y responsivas construidas con Tailwind CSS v4",
+        card2title: "Rendimiento Rápido",
+        card2description:
+          "Optimizado con Next.js 16 para cargas de página ultrarrápidas",
+        card3title: "Multilingüe",
+        card3description:
+          "Soporte completo para múltiples idiomas con cambio fácil",
+      },
+    },
+    about: {
+      title: "Sobre Mí - Mi Portfolio",
+      description: "Aprende más sobre mí y mi experiencia",
+      nav: {
+        home: "Inicio",
+        about: "Sobre Mí",
+        skills: "Habilidades",
+        projects: "Proyectos",
+        contact: "Contacto",
+      },
+      languageSelector: {
+        label: "Idioma",
+      },
+      content: {
+        heading: "Sobre Mí",
+        paragraph1:
+          "Soy un desarrollador front-end apasionado que ama crear experiencias web limpias, modernas e intuitivas. Con un fuerte enfoque en los detalles y la usabilidad, disfruto transformando ideas complejas en interfaces elegantes y responsivas que se sienten sin esfuerzo de usar.",
+        paragraph2:
+          "Impulsado por la curiosidad, siempre estoy explorando nuevas tecnologías como Next.js, React y Tailwind CSS para construir aplicaciones web rápidas, escalables y visualmente atractivas. Creo que el gran diseño y el código sólido van de la mano, y me esfuerzo por llevar ese equilibrio a cada proyecto en el que trabajo.",
+      },
+      experience: {
+        years: "5+",
+        yearsLabel: "Años de Experiencia",
+        projects: "50+",
+        projectsLabel: "Proyectos Completados",
+        satisfaction: "100%",
+        satisfactionLabel: "Satisfacción del Cliente",
+      },
+    },
+    skills: {
+      title: "Habilidades - Mi Portfolio",
+      description: "Mis habilidades técnicas y experiencia",
+      nav: {
+        home: "Inicio",
+        about: "Sobre Mí",
+        skills: "Habilidades",
+        projects: "Proyectos",
+        contact: "Contacto",
+      },
+      languageSelector: {
+        label: "Idioma",
+      },
+      content: {
+        heading: "Mis Habilidades",
+        categories: {
+          frontend: {
+            title: "Desarrollo Front-End",
+            skills: [
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Tailwind CSS",
+              "HTML5",
+              "CSS3",
+            ],
+          },
+          backend: {
+            title: "Desarrollo Back-End",
+            skills: ["Node.js", "Axios", "PostgreSQL", "MongoDB"],
+          },
+          tools: {
+            title: "Herramientas y Tecnologías",
+            skills: ["GitHub", "Cursor", "Figma", "Vercel"],
+          },
+        },
+      },
+    },
+    projects: {
+      title: "Proyectos - Mi Portfolio",
+      description: "Ver mis proyectos recientes y trabajo",
+      nav: {
+        home: "Inicio",
+        about: "Sobre Mí",
+        skills: "Habilidades",
+        projects: "Proyectos",
+        contact: "Contacto",
+      },
+      languageSelector: {
+        label: "Idioma",
+      },
+      content: {
+        heading: "Mis Proyectos",
+        projects: {
+          project1: {
+            title: "Plataforma E-commerce",
+            description: "Plataforma de comercio electrónico completamente responsive construida con Next.js e integración de Stripe. Incluye catálogo de productos, carrito de compras, proceso de pago y panel de administración.",
+            tech: "Next.js, TypeScript, Tailwind CSS, Stripe, PostgreSQL",
+          },
+          project2: {
+            title: "Aplicación de Gestión de Tareas",
+            description: "Aplicación moderna de gestión de tareas con actualizaciones en tiempo real, colaboración en equipo y seguimiento de proyectos. Construida con React y Firebase para sincronización en tiempo real.",
+            tech: "React, Firebase, Material-UI, Redux",
+          },
+          project3: {
+            title: "Sitio Web Portfolio",
+            description: "Sitio web de portfolio multilingüe con diseño UI/UX moderno. Completamente optimizado para SEO y rendimiento con Next.js 16 y Tailwind CSS v4.",
+            tech: "Next.js, TypeScript, Tailwind CSS, i18n",
+          },
+        },
+      },
+    },
+    contact: {
+      title: "Contacto - Mi Portfolio",
+      description: "Ponerse en contacto conmigo",
+      nav: {
+        home: "Inicio",
+        about: "Sobre Mí",
+        skills: "Habilidades",
+        projects: "Proyectos",
+        contact: "Contacto",
+      },
+      languageSelector: {
+        label: "Idioma",
+      },
+      content: {
+        heading: "Ponerse en Contacto",
+        emailLabel: "Correo Electrónico",
+        phoneLabel: "Teléfono",
+        locationLabel: "Ubicación",
+        email: "contacto@ejemplo.com",
+        phone: "+34 6 12345678",
+        location: "Madrid, España",
       },
     },
   },
@@ -360,8 +945,8 @@ export function getTranslations(lang: Language) {
 
 // Validate and return a safe language code
 export function validateLanguage(lang: string): Language {
-  if (lang === "nl" || lang === "en") {
+  if (lang === "nl" || lang === "en" || lang === "de" || lang === "fr" || lang === "es") {
     return lang;
   }
-  return "nl"; // Default to Dutch
+  return "nl"; // Default fallback
 }

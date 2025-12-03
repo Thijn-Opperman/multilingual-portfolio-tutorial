@@ -70,6 +70,9 @@ export default function Navigation({
               >
                 <option value="nl">🇳🇱 Nederlands</option>
                 <option value="en">🇬🇧 English</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="es">🇪🇸 Español</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 <svg
@@ -97,6 +100,9 @@ export default function Navigation({
             >
               <option value="nl">🇳🇱 NL</option>
               <option value="en">🇬🇧 EN</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="es">🇪🇸 ES</option>
             </select>
           </div>
         </div>

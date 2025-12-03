@@ -2,7 +2,7 @@ import { getTranslations, validateLanguage } from "../translations";
 import Navigation from "../components/Navigation";
 
 export async function generateStaticParams() {
-  return [{ lang: "nl" }, { lang: "en" }];
+  return [{ lang: "nl" }, { lang: "en" }, { lang: "de" }, { lang: "fr" }, { lang: "es" }];
 }
 
 export default async function LanguageLayout({
@@ -20,6 +20,7 @@ export default async function LanguageLayout({
     { href: `/${lang}`, label: t.home.nav.home },
     { href: `/${lang}/about`, label: t.home.nav.about },
     { href: `/${lang}/skills`, label: t.home.nav.skills },
+    { href: `/${lang}/projects`, label: t.home.nav.projects },
     { href: `/${lang}/contact`, label: t.home.nav.contact },
   ];
 
